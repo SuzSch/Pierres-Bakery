@@ -7,7 +7,7 @@ namespace PierresBakery
   {
     static void Main()
     {
-      Bread testBread = new Bread();
+      Bread testBread = new Bread(quantity: 1);
       Console.WriteLine(testBread.GetType());
     }
   }
