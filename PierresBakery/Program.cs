@@ -1,10 +1,14 @@
 using System;
+using PierresBakery.Models;
 
-class Program
+namespace PierresBakery
 {
-  static void Main()
+  class Program
   {
-    Bread testBread = new Bread();
-    Console.WriteLine(testBread.GetType());
+    static void Main()
+    {
+      Bread testBread = new Bread();
+      Console.WriteLine(testBread.GetType());
+    }
   }
 }

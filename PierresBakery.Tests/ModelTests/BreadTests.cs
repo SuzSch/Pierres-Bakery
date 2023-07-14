@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakery.Models.Bread;
+using PierresBakery.Models;
 
 namespace PierresBakery.Tests
 {
@@ -7,11 +7,11 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void OrderBread_EnterQuantity_BreadOrder()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      // we can also use the arrange, act, assert organization in any test. 
-      Assert.AreEqual(ExpectedResult, CodeToTest);
+      //arrange, act, assert
+      Bread newBreadOrder = new Bread();
+      Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
     }
   }
 }
