@@ -18,7 +18,7 @@ namespace PierresBakery
       Console.WriteLine("Enter another number:");
 
 
-      Triangle tri = new Triangle(length1, length2, length3);
+      //Triangle tri = new Triangle(length1, length2, length3);
     }
   }
 }
