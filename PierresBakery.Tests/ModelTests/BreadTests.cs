@@ -6,7 +6,6 @@ namespace PierresBakery.Tests
   [TestClass]
   public class BreadTests
   {
-    // NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
     [TestMethod]
     public void BreadConstructor_CreateBreadOrder_Bread()
     {
@@ -18,10 +17,10 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void BreadOrder_GetQuantityofBreadOrdered_NumberOrdered()
     {
-      int BreadOrder = 1;
-      Bread newBreadOrder = new Bread(quantity: BreadOrder, price: 5);
-      int ActualOrder = newBreadOrder.GetQuantity();
-      Assert.AreEqual(BreadOrder, ActualOrder);
+      int breadOrder = 1;
+      Bread newBreadOrder = new Bread(quantity: breadOrder, price: 5);
+      int actualOrder = newBreadOrder.Quantity;
+      Assert.AreEqual(breadOrder, actualOrder);
     }
 
     [TestMethod]
