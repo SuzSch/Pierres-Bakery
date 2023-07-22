@@ -16,13 +16,29 @@ namespace PierresBakery
       int quantity = int.Parse(input);
       int pricePerLoaf = 5;
       Bread breadOrder = new Bread(quantity, pricePerLoaf);
-      int totalCost = breadOrder.GetTotalCost();
+      int breadTotalCost = breadOrder.GetTotalCost();
       Console.WriteLine($"You have ordered {breadOrder.Quantity} loaves");
-      Console.WriteLine($"Your total for the loaves will be ${totalCost}");
-    
+      Console.WriteLine($"Your total for the loaves will be ${breadTotalCost}");
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("We also have a special on pastries. Buy 3, get 1 free. A single pastry costs $2");
+      Console.WriteLine("How many pastries would you like to order today?");
+      Console.WriteLine("Please enter a number:");
+      string pastryInput = Console.ReadLine();
+      int pastryQuantity = int.Parse(pastryInput);
+      int pricePerPastry = 2;
+      Pastry pastryOrder = new Pastry(pastryQuantity, pricePerPastry);
+      int pastryTotalCost = pastryOrder.GetTotalCost();
+      Console.WriteLine($"You have ordered {pastryOrder.Quantity} pastries");
+      Console.WriteLine($"Your total for the pastries will be ${pastryTotalCost}");
+      int grandTotal = breadTotalCost + pastryTotalCost;
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine($"Your grand total for bread and pastries will be ${grandTotal}");
+      Console.WriteLine("Thank you for coming to Pierre's Bakery. Have a great day!");
+
     }
   }
 }
+
 
 
 

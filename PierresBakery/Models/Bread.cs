@@ -16,8 +16,8 @@ public class Bread
     int pricePerLoaf = 5;
     int fullPriceLoaves = Quantity / 3 * 2;
     int remainingLoaves = Quantity % 3;
-    int totalCost = (fullPriceLoaves + remainingLoaves) * pricePerLoaf;
-    return totalCost;
+    int breadTotalCost = (fullPriceLoaves + remainingLoaves) * pricePerLoaf;
+    return breadTotalCost;
   }
 }
 
