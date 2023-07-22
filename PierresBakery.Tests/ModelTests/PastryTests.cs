@@ -21,5 +21,15 @@ namespace PierresBakery.Tests
       int actualOrder = newPastryOrder.Quantity;
       Assert.AreEqual(pastryOrder, actualOrder);
     }
+
+    [TestMethod]
+    public void GetTotalCost_ReturnsCorrectTotalCost()
+    {
+      int quantity = 3;
+      int pricePerPastry = 2;
+      Pastry newPastryOrder = new Pastry(quantity, pricePerPastry);
+      int totalCost = newPastryOrder.GetTotalCost();
+      Assert.AreEqual(6, totalCost);
+    }
   }
 }

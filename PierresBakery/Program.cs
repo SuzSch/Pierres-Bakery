@@ -19,6 +19,7 @@ namespace PierresBakery
       int totalCost = breadOrder.GetTotalCost();
       Console.WriteLine($"You have ordered {breadOrder.Quantity} loaves");
       Console.WriteLine($"Your total for the loaves will be ${totalCost}");
+    
     }
   }
 }

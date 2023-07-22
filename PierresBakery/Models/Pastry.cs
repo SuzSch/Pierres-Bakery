@@ -10,4 +10,14 @@ public class Pastry
     Quantity = quantity;
     Price = price;
   }
+  public int GetTotalCost()
+  {
+    int pricePerPastry = 2;
+    int discountedPrice = pricePerPastry * 3; 
+    int numberOfDiscountedSets = Quantity / 4; 
+    int remainingPastries = Quantity % 4; 
+    int totalCost = (numberOfDiscountedSets * discountedPrice) + (remainingPastries * pricePerPastry);
+    return totalCost;
+  }
+
 }
